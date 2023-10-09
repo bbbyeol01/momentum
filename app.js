@@ -1,25 +1,15 @@
-const calculater = {
-    minus: function(num1, num2) {
-        console.log(num1 - num2);
-    },
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
+const greeting = document.querySelector("#greeting");
 
-    plus: function(num1, num2) {
+const HIDDEN_CLASSNAME = "hidden";
 
-        console.log(num1 + num2);
-    },
-
-    divide: function(num1, num2) {
-        console.log(num1 / num2);
-    },
-
-    multyply: function(num1, num2) {
-        console.log(num1 * num2);
-    },
-
-    powerOf: function(num1, num2) {
-        console.log(num1 ** num2);
-    }
+function onLoginSubmit(event) {
+    event.preventDefault(); //  submit되면 새로고침되는 브라우저의 기본 값을 막음.
+    const username = loginInput.value;
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    greeting.classList.remove(HIDDEN_CLASSNAME);
+    greeting.innerText = `Hello, ${username}` ;
 }
 
-calculater.powerOf(2, 10);
-calculater.minus(5, 10);
+loginForm.addEventListener("submit", onLoginSubmit);

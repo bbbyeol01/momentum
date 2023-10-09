@@ -7,11 +7,15 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>더럽게 어렵네...</p>
-    <img src="html.png" width="500px" height="500px">
-
-
+    <form id="login-form">
+        <input
+        type="text"
+        required
+        maxlength="15"
+        placeholder="What is your name?"/>
+        <button>Log In</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
 
     <script src="app.js"></script>
     
