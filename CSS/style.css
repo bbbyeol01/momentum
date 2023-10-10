@@ -2,6 +2,17 @@
     display: none;
 }
 
+body {
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    margin: 0;
+    padding: 0;
+}
+
 
 img {
     position:absolute;
@@ -24,7 +35,7 @@ img {
 
 #clock {
     text-align: center;
-    font-size: 100pt;
+    font-size: 120pt;
     margin-top: 15%;
     margin-bottom: 0;
     padding: 0;
@@ -37,14 +48,14 @@ img {
 
 #quote {
     text-align: center;
-    font-size: 18pt;
-    white-space: normal;
     width: -50%;
-
+    margin-bottom: 0;
 }
 
 #quote span:first-child {
     font-size: large;
+    width: 600px;
+    white-space: normal;
 }
 
 #quote span:last-child {
