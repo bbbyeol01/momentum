@@ -4,9 +4,8 @@ function getClock() {
     const date = new Date();
     const hours = String(date.getHours()).padStart(2, "0");
     const minites = String(date.getMinutes()).padStart(2, "0");
-    const seconds = String(date.getSeconds()).padStart(2, "0");
-    clock.innerText = `${hours} : ${minites} : ${seconds}`;
+    clock.innerText = `${hours} : ${minites}`;
 }
 
 getClock();
-setInterval(getClock, 1000);    //  1초마다 호출
+setInterval(getClock, 60000);    //  1초마다 호출
