@@ -25,7 +25,7 @@ function paintToDo(newTodo){
     const spanspan = document.createElement("span");
     spanspan.innerText = newTodo.text;
     const buttonbutton = document.createElement("button");
-    buttonbutton.innerText = "❌";
+    buttonbutton.innerText = "x";
     buttonbutton.addEventListener("click", deleteToDo);
     lili.appendChild(spanspan);
     lili.appendChild(buttonbutton);
