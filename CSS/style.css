@@ -31,35 +31,34 @@ img {
     font-size: 40pt;
     margin-top: 0;
     margin-bottom: 0;
+    padding: 0;
 }
 
 #clock {
     text-align: center;
     font-size: 120pt;
-    margin-top: 15%;
     margin-bottom: 0;
-    padding: 0;
-}
-
-#greeting {
-    margin-top: 0;
-    font-size: 40pt;
+    padding-top: 50px;
+    height: 120pt;
 }
 
 #quote {
     text-align: center;
-    width: -50%;
-    margin-bottom: 0;
+    width: 700px;
+    padding-bottom: 20px;
+    bottom: 0;
+    margin: 0 auto;
+    left: -50%;
+    right: -50%;
+    position: fixed;
 }
 
 #quote span:first-child {
-    font-size: large;
-    width: 600px;
-    white-space: normal;
+    font-size: 14pt;
 }
 
 #quote span:last-child {
-    font-size: medium;
+    font-size: 12pt;
 }
 
 #todo-form {
@@ -67,15 +66,29 @@ img {
     margin-top: 0;
 }
 
-#todo-form p {
-    font-size: 20pt;
+#todo-form >p {
+    font-size: 24pt;
+    height: 24pt;
+    margin: 0;
+    padding-top: 20px
 }
 
-#todo-form input {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 3px solid black;
+#todo-form >input {
+    margin-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 3px, black;
+    width: 400px;
+    height: 30pt;
+    font-size: 24pt;
+    background: none;
+}
+
+#todo-list {
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 14pt;
 }
 
 #weather {
@@ -91,5 +104,7 @@ ul {
     display: table;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    text-align: center;
+    list-style: none;
+    padding-left:0px;
   }

@@ -20,9 +20,11 @@ function paintGreetings() {
     const date = new Date();
     const hours = date.getHours();
     const username = localStorage.getItem(USERNAME_KEY);
-    if(hours > 19){
+    if(hours > 19 && hours < 22){
         greeting.innerText = `Good evening, ${username}.`;
-    } else if(hours < 10){
+    } else if(hours > 22){
+        greeting.innerText = `Good night, ${username}.`;
+    } else if(hours < 10 && hours > 5){
         greeting.innerText = `Good morning, ${username}.`;
     } else if(hours > 12 && hours < 18){
         greeting.innerText = `Good afternoon, ${username}.`;
