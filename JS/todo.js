@@ -19,16 +19,27 @@ function deleteToDo(event) {
     // localStorage.removeItem();
 }
 
+function checkTodo(event) {
+    const lili = event.target.parentElement;
+    lili.innerText = "done!";
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(lili.id));
+    saveToDos();
+}
+
 function paintToDo(newTodo){
     const lili = document.createElement("li");
     lili.id = newTodo.id;
     const spanspan = document.createElement("span");
     spanspan.innerText = newTodo.text;
-    const buttonbutton = document.createElement("button");
-    buttonbutton.innerText = "x";
-    buttonbutton.addEventListener("click", deleteToDo);
+    const checkbutton = document.createElement("button");
+    checkbutton.innerText = "✔️"
+    const delbutton = document.createElement("button");
+    delbutton.innerText = "❎";
+    delbutton.addEventListener("click", deleteToDo);
+    checkbutton.addEventListener("click", checkTodo);
     lili.appendChild(spanspan);
-    lili.appendChild(buttonbutton);
+    lili.appendChild(checkbutton);
+    lili.appendChild(delbutton);
     toDoList.appendChild(lili);
 }
 
