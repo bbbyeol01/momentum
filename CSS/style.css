@@ -16,7 +16,7 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/* 
 img {
     background-position: center;
     position: absolute;
@@ -29,7 +29,7 @@ img {
     bottom:0px;
     z-index: -1;
     opacity:60%;
-}
+} */
 
 #greeting {
     text-align: center;
@@ -114,3 +114,14 @@ ul {
     list-style: none;
     padding-left:0px;
   }
+
+.background-box {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
+    opacity: 20%;
+    z-index: -1;
+}
