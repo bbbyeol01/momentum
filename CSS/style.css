@@ -121,11 +121,11 @@ body {
 
 #weather span:first-child {
     right: 0;
-    position: absolute;
     float: right;
     padding: 20px;
     text-align: right;
-    bottom: 625px;
+    bottom: 635px;
+    position: relative;
 }
 
 ul {
