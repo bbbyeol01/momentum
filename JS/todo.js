@@ -32,9 +32,11 @@ function paintToDo(newTodo){
     const spanspan = document.createElement("span");
     spanspan.innerText = newTodo.text;
     const checkbutton = document.createElement("button");
-    checkbutton.innerText = "✔️"
+    checkbutton.classList.add("check");
+    checkbutton.innerText = "V"
     const delbutton = document.createElement("button");
-    delbutton.innerText = "❎";
+    delbutton.innerText = "X";
+    delbutton.classList.add("del");
     delbutton.addEventListener("click", deleteToDo);
     checkbutton.addEventListener("click", checkTodo);
     lili.appendChild(spanspan);
