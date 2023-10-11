@@ -27,13 +27,33 @@ body {
     padding: 0;
 }
 
-#clock {
+#clock-HnM {
     text-align: center;
     font-size: 120pt;
     margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 50px;
     height: 120pt;
+    width: 500px;
+    position: relative;
 }
+
+#clock-S {
+    position: relative;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 44px;
+    left: 200px;
+    opacity: 50%;
+    font-style: italic;
+    font-weight:normal;
+}
+
 
 #quote {
     text-align: center;
