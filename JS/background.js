@@ -5,11 +5,13 @@ const images = [
     "4.beach.jpg"
 ]
 
+
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
-const bgImage = document.createElement("img");
-
-bgImage.src = `img/${chosenImage}`;
-bgImage.style = `max-width:100%; height:auto`;
+document.body.style.backgroundImage = `url(img/${chosenImage})`;
+document.body.style.backgroundPosition = "top";
+document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.backgroundSize = "cover";
+document.body.style.backgroundAttachment = "fixed";
 
 document.body.appendChild(bgImage);

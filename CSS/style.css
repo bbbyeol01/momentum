@@ -3,7 +3,9 @@
 }
 
 body {
+    background-position: center;
     background-color: black;
+    background-size: cover;
     color: white;
     position: fixed;
     width: 100%;
@@ -16,7 +18,9 @@ body {
 }
 
 img {
-    position:absolute;
+    background-position: center;
+    position: absolute;
+    size: cover;
     width:100vw;
     height:100vh;
     left: 0px;
@@ -81,7 +85,7 @@ img {
     border-top: 0;
     border-bottom-width: 3px;
     border-bottom-color: white;
-    width: 400px;
+    width: 410px;
     height: 30pt;
     font-size: 24pt;
     background: none;
