@@ -109,13 +109,23 @@ body {
     font-size: 14pt;
 }
 
-#weather {
+#weather span:last-child{
     right: 0;
     top: 0;
     float: right;
     padding: 20px;
     text-align: right;
     position: absolute;
+    font-size: 20pt;
+}
+
+#weather span:first-child {
+    right: 0;
+    position: absolute;
+    float: right;
+    padding: 20px;
+    text-align: right;
+    bottom: 625px;
 }
 
 ul {
